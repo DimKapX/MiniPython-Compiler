@@ -1,7 +1,8 @@
 # MiniPython Compiler (Static Analysis)
 A compiler front-end for a subset of Python, written in Java using SableCC. It performs lexing, parsing, symbol resolution, and type checking on MiniPython source files, reporting errors without executing the code.
 
-How It Works \n
+How It Works
+
 The compiler runs two AST visitor passes over the parsed source:
 SymbolFinderASTVisitor — collects all variable and function definitions into a symbol table, catching undefined identifiers and duplicate function/argument declarations
 TypeCheckerASTVisitor — walks the AST a second time to infer and validate types, reporting type mismatches in expressions, function calls, and assignments
